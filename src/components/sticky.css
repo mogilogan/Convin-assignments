@@ -1,0 +1,139 @@
+.sticky {
+    padding: 10px 30px;
+    min-height: 85px;
+    z-index: 105;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1a62f2;
+    /* box-shadow: 0 5px 5px rgb(196, 193, 193) ; */
+}
+
+.zoomtext{
+    text-align: center;
+    padding: 8px;
+    font-size: 15px;
+    background-image: linear-gradient(to right, #134deb, #ec3b5f);
+    animation: zoomtext 1.5s ease-out infinite;
+}
+
+@keyframes zoomtext {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+.title{
+    font-size: 2.5vw; 
+    width: 30%;
+}
+.title a{
+    color: white; 
+    text-decoration:none;
+}
+
+
+.stickynav {
+    width: 53%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.stickynav a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4vw;
+    padding: 20px 12px;
+    margin-right: 10px;
+}
+
+.stickynav a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid lightgrey;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin-right: 10px;
+    color: white;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+.dropdown-content{
+    background: white;
+    display: none;
+    z-index: 105;
+    position: absolute;
+    border-radius: 10px;
+}
+.drop:hover .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dropitem {
+    display: inline-block;
+    width: 50%;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+.dropitem:hover {
+    background: #f2f2ff;
+}
+
+.right{
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+.right button {
+    color: #1a62f2;
+    background: white;
+    font-size: 24px;
+    border-radius: 40px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+}
+.right .login {
+    color: white;
+    background: none;
+    border: 1px solid white;
+}
+.login:hover {
+    color: #1a62f2;
+    background: white;
+}
+
+
+.stick {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+  }
+.headroom--scrolled{
+    position: transform 200ms ease-in-out;
+}
+
+.headroom--pinned {
+    position: fixed;
+    transform: translateY(-10%);
+}

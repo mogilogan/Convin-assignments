@@ -1,0 +1,92 @@
+.banner {
+    background-image: url('https://uploads-ssl.webflow.com/606c4d4ed5ba7ca3bc774c4c/62064e8df3397dc069c2ba18_ebook2%20featured%20image.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.left{
+    width: 60%;
+    min-height: 60vh;
+    margin-left: 1vw;
+    margin-top: 10%;
+    color: white;
+}
+
+.downbutton {
+    padding: 20px 25px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    background: linear-gradient(to right, #1a62f2, #8a7bf5);
+}
+
+.section1 {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+h1, h2, p {
+    margin:0;
+}
+
+.coloredback {
+    padding: 5%;
+    background-image: linear-gradient(120deg, #1a62f2, #4166f2, #576bf3, #696ff3, #7874f4, #8e70ed, #a16de5, #b06add, #c35dc9, #d152b3, #d9489c, #dd4285);
+    border-radius: '20px';
+    margin: 50;
+}
+
+.backimg {
+    height: 26vw;
+    border-radius: 10px;
+    background-image: url('https://uploads-ssl.webflow.com/606c4d4ed5ba7ca3bc774c4c/61c35be83abf43a0c35f8976_ebook-CTA-bg.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+.coloredh1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    width: 55%;
+    margin: 4% auto 0;
+    background: #1A62F2;
+    background: -webkit-linear-gradient(to right, #1A62F2 10%, #8E70ED 40%, #DD4285 80%);
+    background: -moz-linear-gradient(to right, #1A62F2 10%, #8E70ED 40%, #DD4285 80%);
+    background: linear-gradient(to right, #1A62F2 10%, #8E70ED 40%, #DD4285 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    margin : auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 27%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #e8e8e8;
+    height: 350px;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.card a {
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #1A62F2;
+    font-weight: 500;
+}
