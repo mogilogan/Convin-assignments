@@ -35,20 +35,25 @@ h1, h2, p {
 }
 
 .coloredback {
+    border-radius: 10px;
+    max-width: 1300px;
     padding: 5%;
-    background-image: linear-gradient(120deg, #1a62f2, #4166f2, #576bf3, #696ff3, #7874f4, #8e70ed, #a16de5, #b06add, #c35dc9, #d152b3, #d9489c, #dd4285);
+    background-image: url(../assets/icons/backbg.png);
     border-radius: '20px';
     margin: 50;
+    
 }
 
 .backimg {
     height: 26vw;
     border-radius: 10px;
+    max-width: 1350px;
     background-image: url('https://uploads-ssl.webflow.com/606c4d4ed5ba7ca3bc774c4c/61c35be83abf43a0c35f8976_ebook-CTA-bg.png');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 60px;
+    
 }
 
 .coloredh1 {
@@ -77,6 +82,26 @@ h1, h2, p {
     height: 350px;
 }
 
+.auth{
+    margin : auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.auth img{
+    align-items: center;
+    padding-left: 200px;
+}
+
+
+
+.auth h2{
+    padding-top: 30px;
+    font-size: 40px;
+}
+
 .card p {
     font-size: 26px;
     font-weight: 500;
@@ -90,3 +115,40 @@ h1, h2, p {
     color: #1A62F2;
     font-weight: 500;
 }
+
+/*footer*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-image: url("../assets/icons/footbg.svg"); min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:#CCC;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.text-center{ color:#CCC}
+
+
+/* Credit to https://bootsnipp.com/snippets/bxDBA */

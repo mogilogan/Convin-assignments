@@ -1,11 +1,18 @@
-import { InputAdornment, TextField, withStyles } from '@material-ui/core';
+import {InputAdornment,CardContent,Card,Grid,Typography, TextField, withStyles } from '@material-ui/core';
 import React, {Component} from 'react';
 import img1 from './../assets/img-1.png';
 import icon1 from './../assets/icons/icon-1.png';
 import icon2 from './../assets/icons/icon-2.png';
 import icon3 from './../assets/icons/icon-3.png';
 import icon4 from './../assets/icons/icon-4.png';
+import authimg from './../assets/icons/authimg.png';
+import convinlogo from './../assets/icons/convinlogo.svg'
 import './body.css';
+
+
+
+
+
 
 const CssTextField = withStyles({
 
@@ -74,9 +81,9 @@ const CssTextField = withStyles({
         return (
             <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: 40}} >
                 <img src={img} style={{width: 75, height: 75, background: 'lightYellow', padding: '10px', margin: 'auto', marginTop: 0}}/>
-                <div style={{width: '80%', margin: '0 50px'}} >
-                    <h1 style={{color: '#333333', fontSize: '38px'}}>{item.head}</h1>
-                    <p style={{marginTop: 20, fontSize: '26px', color: '#626876'}} >{item.body}</p>
+                <div style={{width: '80%', margin: '0 50px', padding: '0px 0px 25px'}} >
+                    <h1 style={{color: '#333333', fontSize: '25px'}}>{item.head}</h1>
+                    <p style={{marginTop: 20, fontSize: '20px', color: '#626876'}} >{item.body}</p>
                 </div>
             </div>
         );
@@ -86,8 +93,8 @@ const CssTextField = withStyles({
         return(
             <div style={{padding: '10px 0'}} >
                 <div style={{display: 'flex', justifyContent: 'left', textAlign: 'left'}}>
-                    <h2 style={{fontSize: '3.4vw', fontWeight: '700', }} >{'0'+i+'.'}</h2>
-                    <h2 style={{fontSize: '1.8vw', margin: 'auto 30px'}}>{item}</h2>
+                    <h2 style={{fontSize: '1.5vw', fontWeight: '800', }} >{'0'+i+'.'}</h2>
+                    <h2 style={{fontSize: '1.5vw',fontWeight:'300', margin: 'auto 30px'}}>{item}</h2>
                 </div>
                 <div style={{borderBottom: '2px solid #f1f2f2', opacity: 0.5, width: '100%', margin: '10px auto'}} />
             </div>
@@ -121,12 +128,14 @@ const CssTextField = withStyles({
                     </div>
                 </div>
 
+
                 <div className='section1'>
                     <div style={{width: '40%', paddingTop: 20}} >
-                        <h1 style={{fontSize: '2.6vw', fontWeight: '800', color: '#333333'}}>
+
+                        <h1 style={{ fontWeight: '900', color: '#333333'}}>
                             Why should you invest time in reading the eBook?
                         </h1>
-                        <p  style={{fontSize: '1.3vw', color: '#626876', lineHeight: '45px', fontWeight: 500, marginTop: '15px'}}>
+                        <p  style={{fontSize: '1vw', color: '#626876', lineHeight: '35px', fontWeight: 500, marginTop: '15px'}}>
                             Handling C-suite buyers is a different experience altogether. The expectation mismatch between the executive buyer and 
                             the seller ruptures good deals and stalls them over silly matters. But considering the involvement of C-level guys 
                             faster in sales deals, sellers must learn to conquer their fear and prepare in advance for the C-level buyer.
@@ -142,15 +151,17 @@ const CssTextField = withStyles({
                     </div>
                 </div>
 
-                <div style={{backgroundColor: 'white', marginBottom: '5%'}}>
-                    <div  className='coloredback'>
-                        <h1 style={{color: '#f1f2f2', fontWeight: '800', fontSize: '44px', textAlign: 'center'}} >What's Inside?</h1>
-                        <p style={{fontSize: '32px', textAlign: 'center',width: '90%', margin: '10px auto', color: '#f1f2f2'}} >
+
+
+                <div  style={{backgroundColor: 'white', marginBottom: '5%',paddingLeft:'220px' }}>
+                    <div  className='coloredback' >
+                        <h1 style={{color: '#f1f2f2', fontWeight: '800', fontSize: '30px', textAlign: 'center'}} >What's Inside?</h1>
+                        <p style={{fontSize: '20px', textAlign: 'center',width: '90%', margin: '10px auto', color: '#f1f2f2'}} >
                             Our mission is not to leave you hanging but deliver practical and straightforward advice on making it big with the 
                             accounts involving C-level executives. This means improving the selling approach immediately. To achieve our mission, 
                             we came up with a game plan for selling to the C-level executives, and it includes;
                         </p>
-                        <div style={{color: '#f1f2f2', textAlign: 'center', width: '60%', margin: '4% auto 0'}}>
+                        <div style={{color: '#f1f2f2', textAlign: 'center',width: '55%', margin: '4% auto 0'}}>
                             {points.map((item, i) => {
                                 return this.pointcontent(item, i+1);
                             })}
@@ -158,7 +169,9 @@ const CssTextField = withStyles({
                     </div>
                 </div>
 
-                <div className='backimg'>
+
+            <div style={{paddingLeft:'220px'}}> 
+                <div className='backimg' >
                     <h1 className='coloredh1'>
                         Ready to overcome your fear and face the C-suite buyer?
                     </h1>
@@ -182,12 +195,15 @@ const CssTextField = withStyles({
                         />
                     </div>
                 </div>
+            </div>
 
-                <div style={{margin: '10% auto 5%', width: '60%', textAlign: 'center'}}>
-                    <h1 style={{color: '#333333', fontSize: '52px', fontWeight: '700'}}>
+
+                <div style={{margin: '10% auto 5%', width: '40%', textAlign: 'center'}}>
+
+                    <h1 style={{color: '#333333', fontSize: '30px', fontWeight: '700'}}>
                         Did You Know?
                     </h1>
-                    <h2 style={{margin: '10px auto', color: '#626876', fontSize: '26px', fontWeight: '400', lineHeight: '50px'}} >
+                    <h2 style={{margin: '10px auto', color: '#626876', fontSize: '20px', fontWeight: '500', lineHeight: '30px'}} >
                         {'Pressure and solitude are permanent companions of CXOs. Unless you know their struggle and circumstances, it’s hard to decode what they expect.'}
                     </h2>
                 </div>
@@ -224,9 +240,140 @@ const CssTextField = withStyles({
                     </div>
                 </div>
 
-                <div style={{height: '250px', backgroundColor: '#1A62F2', marginTop: '80px'}}>
-
+                <div style={{display: 'flex', justifyContent: 'space-evenly', paddingLeft:"200px"}}>
+                    <div className='auth'>
+                        <img class="card-img-left example-card-img-responsive" src={authimg}/>
+                    </div>    
+                    <div className='auth'>
+                        <a style={{fontSize: '15px', color:'blue'}}>The Author</a>
+                        <h2>Abhishika Chatterje</h2>
+                        <p style={{maxWidth:'800px',color: '#626876',fontWeight:'500px',lineHeight: '30px'}}>Abhishikha is a marketing professional with over three years of experience in content writing. She's currently on a mission to create content that will help a salesperson overcome obstacles.</p>
+                    </div>
                 </div>
+
+              
+
+
+
+
+<footer class="footer">
+<div>
+<a href="#"> <img src={convinlogo} /></a>
+</div>
+<div class="container bottom_border">
+<div class="row">
+<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Company</h5>
+
+<p class="mb10">Aout us</p>
+<p class="mb10">Career</p>
+<p class="mb10">Sales Gambit</p>
+<p class="mb10">Press</p>
+<p class="mb10">Success Stories</p>
+<p class="mb10">Blogs</p>
+<p class="mb10">Ebooks</p>
+<p class='mb10'>Pricing</p>
+
+
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">United States of America</h5>
+
+<ul class="footer_ul_amrc">
+<li><a href="#">2093 PHILADELPHIA PIKE #5025 CLAYMONT, DELAWARE 19703</a></li>
+<li><a href="#">PHONE: (+1) 6282095776</a></li>
+<h5 class="headin5_amrc col_white_amrc pt2">India</h5>
+<li><a href="#">BUILDING #79, BALAJI NAGAR SG PALYA, BENGALURU, 560029</a></li>
+<li><a href="#">PHONE1: +91-7011464590</a></li>
+<li><a href="#">PHONE2: +91-8802881329</a></li>
+<h5 class="headin5_amrc col_white_amrc pt2">Email</h5>
+<li><a href="#">contact@convin.ai</a></li>
+</ul>
+
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Products</h5>
+
+<ul class="footer_ul_amrc">
+<li><a href="#">Sales Productivity</a></li>
+<li><a href="#">Tool</a></li>
+<li><a href="#">Call Center</a></li>
+<li><a href="#">Recording Solution</a></li>
+<li><a href="#">Sales Monitoring</a></li>
+<li><a href="#">System</a></li>
+<li><a href="#">Sales Stratergy</a></li>
+<li><a href="#">Software</a></li>
+<li><a href="#">Sales Engagement Software</a></li>
+<li><a href="#">Record and Log</a></li>
+<li><a href="#">Call on CRM</a></li>
+<li><a href="#">Call Recording Software</a></li>
+<li><a href="#">Sales Management</a></li>
+<li><a href="#">Convin Vs Gong</a></li>
+<li><a href="#">Convin Vs Wingman</a></li>
+<li><a href="#">Convin Vs Jiminny</a></li>
+</ul>
+
+
+</div>
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">  </h5>
+<ul class="footer_ul_amrc">
+  <li><a href="#">Sales Acceleration Software</a></li>
+  <li><a href="#">Call Center Recording Solution</a></li>
+  <li><a href="#">Sales Optimization Software</a></li>
+  <li><a href="#">Sales Automation software</a></li>
+  <li><a href="#">Sales Pipeline Management</a></li>
+  <li><a href="#">Sales Engagement Software</a></li>
+  <li><a href="#">Automation Quality Mangement</a></li>
+  <li><a href="#">Sales Tracking Software</a></li>
+  <li><a href="#">Sales Recording Software</a></li>
+  <li><a href="#">Sales Management Software</a></li>
+  <li><a href="#">Sales Enablement Software</a></li>
+  <li><a href="##">Convin Vs Chorus.ai</a></li>
+  <li><a href="#">Convin Vs Salesloft</a></li>
+</ul>
+</div>
+
+
+<div class=" col-sm-4 col-md  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+
+
+<ul class="social_footer_ul">
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<ul class="foote_bottom_ul_amrc">
+<li><a href="#">Terms and Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Security</a></li>
+
+</ul>
+
+<p class="text-center"><a href="#">* Refund Policy    </a><a href="#">* Cancellation Policy     </a><a href="#">* Dispute Policy  </a> <a href="#">* Return Policy</a></p>
+
+</div>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
             </div>
 
         )
